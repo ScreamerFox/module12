@@ -1,0 +1,14 @@
+WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "D:\Project\Python\learning\test.py", line 22, in test_run
+    a = main.Runner('Идущий к реке', abraham)
+                                     ^^^^^^^
+NameError: name 'abraham' is not defined
+WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "D:\Project\Python\learning\test.py", line 12, in test_walk
+    a = main.Runner('Forest Gump', -10)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\Python\learning\main.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
